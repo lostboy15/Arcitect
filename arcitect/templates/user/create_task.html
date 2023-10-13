@@ -1,0 +1,24 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+        <title> create task </title>
+    </head>
+
+    
+    <div class="container bg-white shadow-md p-5">
+    <h2>create a task</h2>
+        <form method="POST" autocomplete="off">
+        
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <input class="btn btn-outline-primary" type="submit" value="Create"/>
+        </form>
+</div>
+</html>
