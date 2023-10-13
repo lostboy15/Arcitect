@@ -87,7 +87,7 @@ def deleteTask(request,pk):
     if request.method == 'POST':
         task.delete()
         return redirect('view-tasks')
-    return render(request,'delete_task.html')
+    return render(request,'user/delete_task.html')
 
 #user-logout
 def user_logout(request):
