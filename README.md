@@ -31,5 +31,3 @@ python manage.py runserver #test if project setup is ok
 copy respective files and templates to project
 python manage.py createsuperuser #create superuser
 
-
-to 
